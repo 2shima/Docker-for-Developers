@@ -8,5 +8,5 @@ docker run \
     --rm \
     -p8086:80 \
     --name="chapter2" \
-    -v `pwd`:/home/app \
+    -v ${pwd}:/home/app \
     chapter2
