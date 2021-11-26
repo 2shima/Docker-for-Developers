@@ -26,4 +26,4 @@ COPY php.conf /etc/apache2/mods-available/php7.3.conf
 RUN a2enmod userdir && a2enmod php7.3
 
 # we run a script to stat the server; the array syntax makes it so ^C will work as we want
-CMD  ["./entrypoint.sh"]
+CMD  ["bash ./entrypoint.sh"]
